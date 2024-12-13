@@ -290,8 +290,6 @@ class WelcomeWindow(QWidget):
 
 
         self.setLayout(layout)
-
-        # Set the background color for this window
         set_background_color(self)
 
     def start_clicked(self):
@@ -308,11 +306,9 @@ class WelcomeWindow(QWidget):
 # Run the PySide6 application
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    # Create the welcome window
+    # the welcome window
     window = WelcomeWindow()
-    # Set the background color for the welcome window
     set_background_color(window)
-    # Show the welcome window
     window.show()
     sys.exit(app.exec())
 
